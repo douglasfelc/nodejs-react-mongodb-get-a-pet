@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 async function main(){
-  await mongoose.connect('mongodb://localhost:27017/getapet', 
+  await mongoose.connect('mongodb://db:27017/getapet', 
   {
     authSource: "admin",
     user: "nodeauth",
@@ -9,7 +9,7 @@ async function main(){
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
-  console.log("Conectou ao Mongoose!")
+  console.log("Mongoose connected!")
 }
 
 main().catch((err) => console.log(err))
