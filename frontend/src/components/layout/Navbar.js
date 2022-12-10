@@ -24,6 +24,9 @@ function Navbar() {
                 </li>
                 {authenticated ? (
                     <>
+                        <li>
+                            <Link to="/settings/profile">Profile</Link>
+                        </li>
                         <li onClick={logout}>Logout</li>
                     </>
                 ) : (
@@ -32,7 +35,7 @@ function Navbar() {
                             <Link to="/login">Login</Link>
                         </li>
                         <li>
-                            <Link to="/Register">Register</Link>
+                            <Link to="/register">Register</Link>
                         </li>
                     </>
                 )}
