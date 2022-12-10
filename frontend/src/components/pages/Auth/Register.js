@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import styles from '../../form/Form.module.css'
 
 // contexts
-import { Context } from '../../../context/UserContext'
+import { Context } from '../../../contexts/UserContext'
 
 function Register() {
     const [user, setUser] = useState({})
@@ -42,10 +42,10 @@ function Register() {
                     required="required"
                 />
                 <Input 
-                    text="Email" 
+                    text="E-mail" 
                     type="email" 
                     name="email" 
-                    placeholder="Enter your email" 
+                    placeholder="Enter your e-mail" 
                     handleOnChange={handleOnChange} 
                     required="required"
                 />

@@ -12,7 +12,7 @@ import Register from './components/pages/Auth/Register'
 import Home from './components/pages/Home'
 
 // contexts
-import { UserProvider } from './context/UserContext'
+import { UserProvider } from './contexts/UserContext'
 
 function App() {
   return (
