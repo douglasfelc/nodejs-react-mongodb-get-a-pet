@@ -13,9 +13,9 @@ router.post(
   PetController.create
 )
 router.get('/', PetController.getAll)
-router.get('/:id', PetController.getPetById)
 router.get('/mypets', verifyToken, PetController.getAllUserPets)
 router.get('/myadoptions', verifyToken, PetController.getAllUserAdoptions)
+router.get('/:id', PetController.getPetById)
 router.delete('/:id', verifyToken, PetController.removePetById)
 router.patch(
   '/:id', 
